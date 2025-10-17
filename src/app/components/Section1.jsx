@@ -56,7 +56,6 @@ export default function Section1() {
     return () => observer.disconnect();
   }, []);
 
-  // Typewriter effect per view
   useEffect(() => {
     if (!inView) {
       setTypedText("");
