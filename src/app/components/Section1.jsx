@@ -159,7 +159,7 @@ export default function Section1() {
               </a>
 
               <a
-                href="#projects"
+                href="projects"
                 className="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-white/80 backdrop-blur transition hover:bg-white/10"
               >
                 View Projects
