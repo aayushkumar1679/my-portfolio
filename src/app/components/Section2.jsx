@@ -48,6 +48,7 @@ export default function Section2() {
       transition={{ duration: 1 }}
       viewport={{ amount: 0.3 }}
       className="relative py-12 text-white overflow-hidden"
+      id="passion"
     >
       <div className="container mx-auto px-6 lg:px-16">
         {/* Typewriter Title */}

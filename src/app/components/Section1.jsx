@@ -47,6 +47,7 @@ export default function Section1() {
     return () => cancelAnimationFrame(raf);
   }, [mousePos]);
 
+  // Detect when left section comes into view
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => setInView(entry.isIntersecting),
@@ -56,6 +57,7 @@ export default function Section1() {
     return () => observer.disconnect();
   }, []);
 
+  // Typewriter effect per view
   useEffect(() => {
     if (!inView) {
       setTypedText("");
@@ -74,7 +76,6 @@ export default function Section1() {
     <>
       {/* Global mouse glow */}
       <div
-        id="#about"
         aria-hidden="true"
         className="pointer-events-none fixed top-0 left-0 z-[9999] blur-[130px] transition-transform duration-100 ease-out"
         style={{
@@ -88,9 +89,10 @@ export default function Section1() {
         }}
       />
 
-      <section className="relative isolate overflow-hidden z-10">
+      <section className="relative isolate overflow-hidden z-10" id="about">
         {/* Background gradient */}
         <div
+          id="#about"
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(1200px_600px_at_30%_20%,rgba(159,37,143,0.35),transparent_60%),radial-gradient(900px_500px_at_80%_40%,rgba(37,32,96,0.75),transparent_60%),linear-gradient(120deg,#0b0b1a_0%,#15152b_100%)]"
         />
