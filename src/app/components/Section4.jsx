@@ -24,7 +24,7 @@ const cards = [
     icon: <Database size={26} />,
     title: "3D Landing Page Demo",
     desc: "Interactive landing page built with Three.js and modern UI elements. #3js #frontend",
-    link: "#",
+    link: "https://github.com/aayushkumar1679/3js-landing-page",
     glow: "from-[#35f0ff] via-[#66ffff] to-[#35f0ff]",
     ring: "shadow-[0_0_30px_6px_rgba(53,240,255,0.45)]",
   },
